@@ -1,0 +1,44 @@
+﻿@model MvcApi.Models.Products
+@{
+    ViewBag.Title = "GetProductById";
+}
+
+<h2>GetProductById</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QntyInStock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suppiler)
+        </th>
+        <th></th>
+    </tr>
+
+   
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.QntyInStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Suppiler)
+            </td>
+            
+        </tr>
+    
+
+</table>
+
+
